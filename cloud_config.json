@@ -1,0 +1,30 @@
+{
+    "name": "Trivia-Server",
+    "vcap": {
+        "services": {
+            "cloudantNoSQLDB": [
+                {
+                    "credentials": {
+                        "username": “***fill in username***”,
+                        "password": "***fill in password***”,
+                        "host": "***fill in host name***”,
+                        "port": 443,
+                        "url": "***fill in host url***”
+                    },
+                    "syslog_drain_url": null,
+                    "volume_mounts": [],
+                    "label": "cloudantNoSQLDB",
+                    "provider": null,
+                    "plan": "Shared",
+                    "name": "***fill in database name***”,
+                    "tags": [
+                        "data_management",
+                        "ibm_created",
+                        "lite",
+                        "ibm_dedicated_public"
+                    ]
+                }
+            ]
+        }
+    }
+}

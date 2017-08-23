@@ -1,0 +1,13 @@
+declared-services:
+  Cloudant NoSQL DB-4u:
+    label: cloudantNoSQLDB
+    plan: Shared
+applications:
+- name: Trivia-Server
+  memory: 256M
+  instances: 1
+  disk_quota: 1024M
+  buildpack: swift_buildpack
+  command: Trivia-Server
+  services:
+   - “Cloudant NoSQL DB-4u”
