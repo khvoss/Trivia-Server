@@ -5,7 +5,7 @@
             "cloudantNoSQLDB": [
                 {
                     "credentials": {
-                        "username": “***fill in username***”,
+                        "username": "***fill in username***",
                         "password": "***fill in password***”,
                         "host": "***fill in host name***”,
                         "port": 443,
